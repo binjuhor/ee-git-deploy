@@ -10,10 +10,13 @@ PROJECT_NAME=$1
 USER_DIR='/home/git'
 GIT_DIR="${USER_DIR}/${PROJECT_NAME}"
 CURENT_IP="$(dig +short myip.opendns.com @resolver1.opendns.com)"
-
+# POST_RECEIVE_CONTENT=$(curl -L raw.githubusercontent.com/binjuhor/ee-git-deploy/master/post-receive)
 git init --bare $GIT_DIR
-cp -r $USER_DIR/post-receive $GIT_DIR/hooks/ # Create a post-receive file in /home/git
-vi $GIT_DIR/hooks/post-receive
+# echo $POST_RECEIVE_CONTENT > $GIT_DIR/hooks/post-receive
+wget -qO post-receive raw.githubusercontent.com/binjuhor/ee-git-deploy/master/post-receive
+mv post-receive $GIT_DIR/hooks/post-receive
+chmod +x $GIT_DIR/hooks/post-receive
+vi $GIT_DIR/hooks/post-receive # Let you edit your domain and config text
 chown -R git:git $GIT_DIR
 
 echo "You can add this repo to deploy"
