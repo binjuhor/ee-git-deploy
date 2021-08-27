@@ -10,4 +10,4 @@ chown -R git:git /home/git # permision to git folder
 # Create command git-deploy 
 wget -qO git-deploy.sh raw.githubusercontent.com/binjuhor/ee-git-deploy/master/git-deploy.sh
 chmod +x git-deploy.sh
-mv ./git-devploy.sh /usr/local/bin/git-deploy
+mv ./git-deploy.sh /usr/local/bin/git-deploy
