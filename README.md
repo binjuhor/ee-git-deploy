@@ -12,7 +12,7 @@ wget -qO ee-git cutt.ly/ee-git && sudo bash ee-git
 1.  Create a website with EasyEngine's command 
 
     `sudo ee site create example.com --type=wp`
-2. Create git deploy for example.com theme
+2. Create git deploy for example.com's theme
 
     `git-deploy example.com`
 3. Edit `post-receive` with your theme and domain replace theme and domain in this file *( the `git-deploy` command auto show this file content so you just need to edit this file by vim editor)*
