@@ -1,5 +1,5 @@
 # Git deploy with EasyEngine v4.x
-
+Tested with Ubuntu 16.x ~\
 Add command `git-deploy` to your VPS, help you manage your website's source code by git, forget `FTP, SFTP`, no thirdparty software needed, just Git and EasyEngine.
 
 ## Install EE & Git Deploy
