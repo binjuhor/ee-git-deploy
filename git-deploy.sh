@@ -20,7 +20,7 @@ if [ $PROJECT_NAME != "" ]; then
   sed -i.bak "s/\<theme_name\>/${PROJECT_NAME}/g" post-receive
 fi
 
-sed -i.bak "s/\<theme_name\>/${GIT_NAME}/g" post-receive
+sed -i.bak "s/\<yourdomain.com\>/${GIT_NAME}/g" post-receive
 mv post-receive $GIT_DIR/hooks/post-receive
 chmod +x $GIT_DIR/hooks/post-receive
 # vi $GIT_DIR/hooks/post-receive # Let you edit your domain and config text
