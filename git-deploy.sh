@@ -5,6 +5,7 @@ then
   echo "Usage: git-deploy {git-name}"
   exit 1
 fi
+
 # Take the search string
 read -p "Enter the theme name: " PROJECT_NAME
 
@@ -29,5 +30,6 @@ mkdir $SOURCE_DIR
 chown -R git:git $GIT_DIR
 chown -R www-data:www-data $SOURCE_DIR
 
-echo "You can add this repo to deploy your theme"
-echo "git remote add live git@${CURRENT_IP}:${GIT_NAME}"
+echo -e "\e[1;33mCopy and run the command below in your local repo: \033[0m"
+echo -e "\e[1;92mgit remote add live git@${CURRENT_IP}:${GIT_NAME}\033[0m"
+echo -e "\e[33mRun \e[1;92mgit push live master\e[33m command to push code to your theme\033[0m"
