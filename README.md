@@ -15,10 +15,14 @@ wget -qO ee-git cutt.ly/ee-git && sudo bash ee-git
 2. Create git deploy for example.com's theme
 
     `git-deploy example.com`
-3. Edit `post-receive` with your theme and domain replace theme and domain in this file *( the `git-deploy` command auto show this file content so you just need to edit this file by vim editor)*
+3. Input your theme folder name to deploy
+4. Enjoy!
 
-4. Save the file and add this remote repo to your local repo
-5. Enjoy!
+## Note
+
+To deploy WordPress plugins you can also use this way to create git deploy, but you need to edit the `/home/example.com/hooks/post-receive` file to make sure your git checkout exact source code to the right folder.
+
+Contact me if need a help.
 ## Contact info
 
 Email: kiemhd@outlook.com
