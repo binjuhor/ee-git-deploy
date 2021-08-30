@@ -30,6 +30,6 @@ mkdir $SOURCE_DIR
 chown -R git:git $GIT_DIR
 chown -R www-data:www-data $SOURCE_DIR
 
-echo -e "\e[1;33mCopy and run the command below in your local repo: \033[0m"
+echo -e "\n\e[33mCopy and run the command below in your local repo: \033[0m"
 echo -e "\e[1;92mgit remote add live git@${CURRENT_IP}:${GIT_NAME}\033[0m"
-echo -e "\e[33mRun \e[1;92mgit push live master\e[33m command to push code to your theme\033[0m"
+echo -e "\e[33mRun \e[1;92mgit push live master\e[0;33m command to push code to your theme\033[0m\n"
