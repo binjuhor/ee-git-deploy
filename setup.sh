@@ -7,7 +7,7 @@ echo "git ALL=(ALL) NOPASSWD: ALL" >>  /etc/sudoers #add at the end of that file
 mkdir /home/git # folder will contain git files
 chown -R git:git /home/git # permision to git folder
 
-# Create command git-deploy 
+# Create command ee-git
 wget -qO ee-git raw.githubusercontent.com/binjuhor/ee-git-deploy/master/ee-git.sh
 chmod +x ee-git
 mv ./ee-git.sh /usr/local/bin/ee-git
