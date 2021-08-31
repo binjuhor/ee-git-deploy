@@ -18,6 +18,7 @@ wget -qO ee-git cutt.ly/ee-git && sudo bash ee-git
 3. Enjoy!
 
 ## Note
+You should create your website by `ee` command first after that run command `ee-git` to setup git deploy for your theme.
 
 To deploy WordPress plugins you can also use this way to create git deploy, but you need to edit the `/home/example.com/hooks/post-receive` file to make sure your git checkout exact source code to the right folder.
 
