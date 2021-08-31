@@ -10,5 +10,8 @@ chown -R git:git /home/git # permision to git folder
 # Create command ee-git
 wget -qO ee-git raw.githubusercontent.com/binjuhor/ee-git-deploy/master/ee-git.sh
 chmod +x ee-git
-mv ./ee-git.sh /usr/local/bin/ee-git
-echo -e "\e[33mRun \e[1;92mee-git yourdomain.com theme_name\e[0;33m command setup git deploy for your theme\033[0m\n"
+mv ./ee-git /usr/local/bin/ee-git
+echo -e "\n\e[33mRun \e[1;92mee-git yourdomain.com theme_name\e[0;33m command to setup git deploy for your theme\033[0m\n"
+
+# Remove setup file
+rm -f ee-git-setup
