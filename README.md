@@ -6,7 +6,7 @@ Add command `ee-git` to your VPS, help you manage your website's source code by 
 
 ```
 # Run this command will install EasyEngine and git deploy in a command
-wget -qO ee-git-setup bit.ly/ee-git && sudo bash ee-git-setup
+wget -qO eeGit bit.ly/ee-git && sudo bash eeGit
 ```
 ## Instructions
 1.  Create a website with EasyEngine's command 
