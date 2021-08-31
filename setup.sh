@@ -8,7 +8,7 @@ mkdir /home/git # folder will contain git files
 chown -R git:git /home/git # permision to git folder
 
 # Create command git-deploy 
-wget -qO git-deploy.sh raw.githubusercontent.com/binjuhor/ee-git-deploy/master/git-deploy.sh
-chmod +x git-deploy.sh
-mv ./git-deploy.sh /usr/local/bin/git-deploy
-rm -f ee-git
+wget -qO ee-git raw.githubusercontent.com/binjuhor/ee-git-deploy/master/ee-git.sh
+chmod +x ee-git
+mv ./ee-git.sh /usr/local/bin/ee-git
+echo -e "\e[33mRun \e[1;92mee-git yourdomain.com theme_name\e[0;33m command setup git deploy for your theme\033[0m\n"
