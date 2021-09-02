@@ -33,7 +33,7 @@ You should create your website by `ee` command first after that run command `ee-
 
 To deploy WordPress plugins you can also use this way to create git deploy, but you need to edit the `/home/example.com/hooks/post-receive` file to make sure your git checkout exact source code to the right folder.
 
-Contact me if need a help.
+Should also need to add your public SSH key to `/home/git/.ssh/authorize_key` too.
 ## Contact info
 
 Email: kiemhd@outlook.com
