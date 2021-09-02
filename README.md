@@ -1,14 +1,6 @@
 # Git deploy with EasyEngine v4.x
 
-
 Add command `ee-git` to your VPS, help you manage your website's source code by git, forget `FTP, SFTP`, no thirdparty software needed, just Git and EasyEngine.
-
-## Requirements
-
-. Docker
-. Docker-Compose
-. PHP CLI (>=7.1)
-. PHP Modules - curl, sqlite3, pcntl
 ## Install EE & Git Deploy
 
 ### Installing
