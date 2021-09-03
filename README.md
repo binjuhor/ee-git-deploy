@@ -8,7 +8,6 @@ Add command `ee-git` to your VPS, help you manage your website's source code by 
 For Linux, we have created an installer script which will install all the dependencies for you. We have tested this on Ubuntu 14.04, 16.04, 18.04 and Debian 8, Debian 10 ( Only EasyEngine supported system ).
 
 ```
-# Run this command will install EasyEngine and git deploy in a command
 wget -qO eeGit bit.ly/ee-git && sudo bash eeGit
 ```
 ## Usage
