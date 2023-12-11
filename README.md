@@ -27,4 +27,4 @@ wget -qO eeGit bit.ly/ee-git && sudo bash eeGit
 3. You should also need to add your public SSH key to `/home/git/.ssh/authorized_keys` too.
 ## Contact info
 
-Email: kiemhd@outlook.com
+Email: hi@binjuhor.com
